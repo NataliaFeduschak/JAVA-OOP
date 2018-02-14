@@ -1,0 +1,23 @@
+package phones;
+
+public abstract class Phone {
+		protected boolean touch;
+		protected boolean hasWifi;
+		protected long screenSize;
+	public Phone() {
+		System.out.println("Phone constructor");
+		}
+	public boolean isTouch() {
+		return touch;
+		}
+	public boolean isHasWifi() {
+		return hasWifi;
+		}
+	public long getScreenSize() {
+		return screenSize;
+		}
+	public void call(String number) {
+		System.out.println("Phone class is calling " + number);
+		}
+	public abstract void sendSMS(String number, String message);
+}
